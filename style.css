@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+    font-family: 'Kumbh Sans';
+}
+
+.top-bg-img{
+    position: absolute;
+    top: -100%;
+    left: -20%;
+}
+.bottom-bg-img{
+    position: absolute;
+    bottom: -100%;
+    right: -20%;
+}
+
+@media screen and (max-width: 992px){
+    .top-bg-img{
+        position: absolute;
+        top: -100%;
+        left: -40%;
+    }
+    .bottom-bg-img{
+        position: absolute;
+        bottom: -100%;
+        right: -40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .top-bg-img{
+        position: absolute;
+        top: -110%;
+        left: -80%;
+    }
+    .bottom-bg-img{
+        position: absolute;
+        bottom: -110%;
+        right: -80%;
+    }
+}
+@media screen and (max-width: 480px){
+    .top-bg-img{
+        position: absolute;
+        top: -110%;
+        left: -180%;
+    }
+    .bottom-bg-img{
+        position: absolute;
+        bottom: -110%;
+        right: -180%;
+    }
+}
+
+/* =================card-container============ */
+.card-container{
+    width: 300px;
+    height: 335px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    
+   
+}
+
+.top-img{
+    height: 120px;
+    border-radius: 15px;
+}
+.card-content{
+    background-color: #fff;
+    padding: 65px 30px;
+    text-align: center;
+    position: relative;
+    top: -4px;
+    border-radius: 0 0 5px 5px;
+}
+
+.person-img{
+    width: 100px;
+    height: 100px;
+    margin:  0 auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.person-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card-content-header .name{
+    /* margin-bottom: 10px; */
+}
+
+.card-content-header span:first-child{
+    padding-right: 8px;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-content-header span:last-child{
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+
+.card-content-header .city{
+    margin-top: 10px;
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.border-line{
+    width: 120%;
+    height: 1.5px;
+    position: relative;
+    left: -20px;
+    margin: 25px auto;
+    background-color: rgb(25, 162, 174, 0.2);
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer .footer-item h3{
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.card-footer .footer-item span{
+    color: var(--Dark-gray);
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
